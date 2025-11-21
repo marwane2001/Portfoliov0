@@ -1,0 +1,19 @@
+{
+  "name": "marwane-skaro-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Marwane Skaro - Full Stack Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "web developer",
+    "full stack",
+    "resume"
+  ],
+  "author": "Marwane Skaro",
+  "license": "MIT"
+}
+
