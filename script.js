@@ -51,6 +51,20 @@ const projects = [
         icon: "📚"
     },
     {
+        title: "Shopping Website",
+        description: "A complete e-commerce platform built with PHP for academic purposes. Features include product catalog with categories, shopping cart functionality, user authentication, order management, and admin panel for inventory management.",
+        tags: ["PHP", "MySQL", "E-commerce", "Full Stack", "HTML/CSS"],
+        github: "https://github.com/marwane2001/Shopping_Website",
+        icon: "🛒"
+    },
+    {
+        title: "Chat App",
+        description: "A real-time chat application built with Flutter for cross-platform mobile development and Firebase for backend services. Features include instant messaging, user authentication, real-time message synchronization, and group chat capabilities.",
+        tags: ["Flutter", "Firebase", "Dart", "Mobile", "Real-time"],
+        github: "https://github.com/marwane2001/chat_app",
+        icon: "💬"
+    },
+    {
         title: "Spring Boot CRUD Applications",
         description: "Enterprise-grade CRUD applications built with Spring Boot and Java. Implements RESTful APIs, database operations with JPA/Hibernate, and follows MVC architecture. Includes multiple variations demonstrating different patterns and best practices.",
         tags: ["Java", "Spring Boot", "REST API", "JPA", "Backend"],
@@ -70,20 +84,6 @@ const projects = [
         tags: ["TypeScript", "CRUD", "Frontend", "Data Management"],
         github: "https://github.com/marwane2001/Students_Crudv2",
         icon: "👨‍🎓"
-    },
-    {
-        title: "Chat App",
-        description: "A real-time chat application built with Flutter for cross-platform mobile development and Firebase for backend services. Features include instant messaging, user authentication, real-time message synchronization, and group chat capabilities.",
-        tags: ["Flutter", "Firebase", "Dart", "Mobile", "Real-time"],
-        github: "https://github.com/marwane2001/chat_app",
-        icon: "💬"
-    },
-    {
-        title: "Shopping Website",
-        description: "A complete e-commerce platform built with PHP for academic purposes. Features include product catalog with categories, shopping cart functionality, user authentication, order management, and admin panel for inventory management.",
-        tags: ["PHP", "MySQL", "E-commerce", "Full Stack", "HTML/CSS"],
-        github: "https://github.com/marwane2001/Shopping_Website",
-        icon: "🛒"
     },
     {
         title: "Telegram Image Classification ChatBot",
