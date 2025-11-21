@@ -11,6 +11,8 @@
 
 A modern, responsive portfolio website showcasing professional work as a Full Stack Developer.
 
+> ✨ **CI/CD Enabled**: Automated testing and deployment on every push!
+
 [Live Demo](#) • [Report Bug](https://github.com/marwane2001/Portfolio-/issues) • [Request Feature](https://github.com/marwane2001/Portfolio-/issues)
 
 </div>
