@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwane Skaro - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resume-container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+        }
+
+        .header {
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            color: #6366f1;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 11px;
+            color: #6b7280;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1f2937;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .experience-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .company-name {
+            font-size: 13px;
+            color: #6366f1;
+            font-weight: 600;
+        }
+
+        .date-location {
+            font-size: 11px;
+            color: #6b7280;
+            text-align: right;
+        }
+
+        .job-description {
+            font-size: 11px;
+            color: #4b5563;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #f3f4f6;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 11px;
+            color: #374151;
+            border: 1px solid #e5e7eb;
+        }
+
+        .technologies {
+            margin-top: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tech-tag {
+            background: #ede9fe;
+            color: #6366f1;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .degree {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 3px;
+        }
+
+        .school {
+            font-size: 12px;
+            color: #6366f1;
+            margin-bottom: 3px;
+        }
+
+        .education-date {
+            font-size: 11px;
+            color: #6b7280;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .resume-container {
+                padding: 15mm;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>MARWANE SKARO</h1>
+            <h2>Full Stack Developer</h2>
+            <div class="contact-info">
+                <span>📧 marwanebenhadj@gmail.com</span>
+                <span>🔗 linkedin.com/in/marwane-skaro-618971239</span>
+                <span>💻 github.com/marwane2001</span>
+                <span>🌐 portfoliov0-krfbwvi59-marwane2001s-projects.vercel.app</span>
+                <span>📍 Morocco</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p style="font-size: 11px; color: #4b5563; line-height: 1.6;">
+                Software Engineering Student at Polytechnique of Agadir and Full Stack Developer with 2+ years of professional experience 
+                in building scalable web applications. Proficient in modern frontend and backend technologies 
+                including React, Vue.js, Django, Laravel, and Symfony. Passionate about creating innovative 
+                solutions and continuously learning new technologies. Proven track record of delivering 
+                high-quality projects through internships and consulting roles.
+            </p>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Full Stack Developer Consultant</div>
+                        <div class="company-name">Auditcloud Maroc</div>
+                    </div>
+                    <div class="date-location">
+                        Oct 2025 - Present · 2 mos<br>
+                        Rabat, Morocco · On-site
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">UML</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Full Stack Development</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Software Engineer</div>
+                        <div class="company-name">Bytebuild</div>
+                    </div>
+                    <div class="date-location">
+                        Mar 2025 - Aug 2025 · 6 mos<br>
+                        Agadir, Souss-Massa, Morocco · Hybrid
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">Django REST Framework</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Backend Development</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Full-stack Developer</div>
+                        <div class="company-name">9rayti.Com</div>
+                    </div>
+                    <div class="date-location">
+                        Jul 2024 - Dec 2024 · 6 mos<br>
+                        Agadir, Souss-Massa, Morocco · Hybrid
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">Symfony Framework</span>
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Full Stack Development</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Full-stack Developer</div>
+                        <div class="company-name">Bytebuild</div>
+                    </div>
+                    <div class="date-location">
+                        Jul 2023 - Sep 2023 · 3 mos<br>
+                        Agadir, Souss-Massa, Morocco · On-site
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Full Stack Development</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="two-column">
+                <div>
+                    <div style="margin-bottom: 10px;">
+                        <strong style="font-size: 11px; color: #1f2937;">Frontend:</strong>
+                        <div class="skills-list" style="margin-top: 5px;">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <strong style="font-size: 11px; color: #1f2937;">Mobile:</strong>
+                        <div class="skills-list" style="margin-top: 5px;">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Dart</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="margin-bottom: 10px;">
+                        <strong style="font-size: 11px; color: #1f2937;">Backend:</strong>
+                        <div class="skills-list" style="margin-top: 5px;">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Symfony</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                        </div>
+                    </div>
+                    <div>
+                        <strong style="font-size: 11px; color: #1f2937;">Tools & Others:</strong>
+                        <div class="skills-list" style="margin-top: 5px;">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">UML</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="section">
+            <div class="section-title">Featured Projects</div>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <div class="job-title">Learning Management System</div>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">Django REST Framework</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Full Stack</span>
+                </div>
+                <div class="job-description">
+                    Comprehensive full-stack LMS platform with user authentication, course management, 
+                    student enrollment, progress tracking, assignment submissions, and real-time notifications.
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <div class="job-title">Shopping Website</div>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">E-commerce</span>
+                </div>
+                <div class="job-description">
+                    Complete e-commerce platform with product catalog, shopping cart, user authentication, 
+                    order management, and admin panel.
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <div class="job-title">Chat App</div>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Real-time</span>
+                </div>
+                <div class="job-description">
+                    Real-time chat application with instant messaging, user authentication, 
+                    and real-time message synchronization.
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="degree">Software Engineering</div>
+                <div class="school">Polytechnique of Agadir</div>
+                <div class="education-date">2020 - 2025</div>
+            </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <div class="section-title">Languages</div>
+            <div style="font-size: 11px; color: #4b5563; line-height: 1.8;">
+                <p>• <strong>Arabic:</strong> Native proficiency</p>
+                <p>• <strong>Tamazight:</strong> Native proficiency</p>
+                <p>• <strong>French:</strong> Professional working proficiency</p>
+                <p>• <strong>English:</strong> Professional working proficiency</p>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="section">
+            <div class="section-title">Additional Information</div>
+            <div style="font-size: 11px; color: #4b5563; line-height: 1.8;">
+                <p>• 24+ GitHub repositories demonstrating full-stack development expertise</p>
+                <p>• Portfolio: <a href="https://portfoliov0-krfbwvi59-marwane2001s-projects.vercel.app/" style="color: #6366f1; text-decoration: none;">portfoliov0-krfbwvi59-marwane2001s-projects.vercel.app</a></p>
+                <p>• GitHub: github.com/marwane2001</p>
+                <p>• Active in developing solutions across web, mobile, and machine learning domains</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

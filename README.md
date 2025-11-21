@@ -232,7 +232,7 @@ The portfolio includes the following sections:
 
 - **GitHub**: [@marwane2001](https://github.com/marwane2001)
 - **LinkedIn**: [Marwane Skaro](https://www.linkedin.com/in/marwane-skaro-618971239)
-- **Portfolio**: [Live Site](#) _(Update with your deployed URL)_
+- **Portfolio**: [Live Site](https://portfoliov0-krfbwvi59-marwane2001s-projects.vercel.app/)
 
 ## 📄 License
 
