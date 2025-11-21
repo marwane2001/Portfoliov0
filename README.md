@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Portfolio](https://img.shields.io/badge/Portfolio-Live-success)
-![CI/CD](https://github.com/marwane2001/Portfolio-/actions/workflows/ci-cd.yml/badge.svg)
+![CI/CD](https://github.com/marwane2001/Portfoliov0/actions/workflows/ci-cd.yml/badge.svg)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
@@ -13,7 +13,7 @@ A modern, responsive portfolio website showcasing professional work as a Full St
 
 > ✨ **CI/CD Enabled**: Automated testing and deployment on every push!
 
-[Live Demo](#) • [Report Bug](https://github.com/marwane2001/Portfolio-/issues) • [Request Feature](https://github.com/marwane2001/Portfolio-/issues)
+[Live Demo](#) • [Report Bug](https://github.com/marwane2001/Portfoliov0/issues) • [Request Feature](https://github.com/marwane2001/Portfoliov0/issues)
 
 </div>
 
@@ -77,8 +77,8 @@ A professional portfolio website designed to showcase my projects, skills, and p
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/marwane2001/Portfolio-.git
-   cd Portfolio-
+   git clone https://github.com/marwane2001/Portfoliov0.git
+   cd Portfoliov0
    ```
 
 2. **Open the project**
@@ -115,11 +115,12 @@ serve .
 ## 📁 Project Structure
 
 ```
-Portfolio-/
+Portfoliov0/
 │
 ├── index.html          # Main HTML structure
 ├── styles.css          # All CSS styling and animations
 ├── script.js           # JavaScript functionality and project data
+├── profile-image.jpg   # Profile image
 ├── vercel.json         # Vercel deployment configuration
 ├── package.json        # Project metadata and dependencies
 ├── .gitignore          # Git ignore rules
@@ -131,7 +132,7 @@ Portfolio-/
 
 ### Deploy to Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/marwane2001/Portfolio-)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/marwane2001/Portfoliov0)
 
 1. Push your code to GitHub
 2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
@@ -142,7 +143,7 @@ Portfolio-/
 
 ### Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marwane2001/Portfolio-)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marwane2001/Portfoliov0)
 
 1. Push your code to GitHub
 2. Go to [netlify.com](https://netlify.com) and sign in with GitHub
@@ -160,7 +161,7 @@ Portfolio-/
 3. Under "Source", select your branch (usually `main`)
 4. Select folder: `/ (root)`
 5. Click "Save"
-6. Your site will be live at `https://username.github.io/Portfolio-/`
+6. Your site will be live at `https://username.github.io/Portfoliov0/`
 
 ### CI/CD Pipeline
 
