@@ -3,6 +3,7 @@
 <div align="center">
 
 ![Portfolio](https://img.shields.io/badge/Portfolio-Live-success)
+![CI/CD](https://github.com/marwane2001/Portfolio-/actions/workflows/ci-cd.yml/badge.svg)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
@@ -42,6 +43,7 @@ A professional portfolio website designed to showcase my projects, skills, and p
 - **🚀 Easy Deployment**: Ready for Vercel, Netlify, GitHub Pages, or any static hosting
 - **🎯 Smooth Navigation**: Intuitive user experience with smooth scrolling
 - **💼 Professional Sections**: Showcases experience, projects, and technical skills
+- **🔄 CI/CD Pipeline**: Automated testing and deployment with GitHub Actions
 
 ## 🛠️ Tech Stack
 
@@ -58,6 +60,7 @@ A professional portfolio website designed to showcase my projects, skills, and p
 ### Development Tools
 - **Git**: Version control
 - **GitHub**: Code repository
+- **GitHub Actions**: CI/CD automation
 - **VS Code**: Recommended IDE
 
 ## 🚀 Getting Started
@@ -156,6 +159,23 @@ Portfolio-/
 4. Select folder: `/ (root)`
 5. Click "Save"
 6. Your site will be live at `https://username.github.io/Portfolio-/`
+
+### CI/CD Pipeline
+
+This project includes automated CI/CD using GitHub Actions:
+
+- **Automated Testing**: Validates HTML, CSS, and JavaScript on every push
+- **Automatic Deployment**: Deploys to Vercel after successful validation
+- **Quality Assurance**: Ensures code quality before deployment
+
+**Setup CI/CD:**
+1. Add Vercel secrets to GitHub repository (Settings → Secrets → Actions):
+   - `VERCEL_TOKEN`
+   - `VERCEL_ORG_ID`
+   - `VERCEL_PROJECT_ID`
+2. Push to main branch - deployment happens automatically!
+
+See [CI/CD Setup Guide](.github/CICD_SETUP.md) for detailed instructions.
 
 ### Other Static Hosting
 
