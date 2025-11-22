@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
             size: A4;
             margin: 0;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -66,7 +67,7 @@
         .section {
             margin-bottom: 12px;
         }
-        
+
         .section:last-child {
             margin-bottom: 0;
         }
@@ -83,7 +84,8 @@
             page-break-after: avoid;
         }
 
-        .experience-item, .project-item {
+        .experience-item,
+        .project-item {
             margin-bottom: 10px;
             padding-left: 15px;
             position: relative;
@@ -210,33 +212,36 @@
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
-            
+
             .resume {
                 padding: 10mm;
             }
-            
+
             .section {
                 margin-bottom: 10px;
             }
-            
+
             .section-title {
                 margin-top: 4px;
                 margin-bottom: 6px;
             }
-            
-            .experience-item, .project-item {
+
+            .experience-item,
+            .project-item {
                 margin-bottom: 8px;
             }
-            
+
             .header {
                 margin-bottom: 12px;
             }
-            
+
             /* Allow orphan/widow control */
-            h1, h2, h3 {
+            h1,
+            h2,
+            h3 {
                 page-break-after: avoid;
             }
-            
+
             p {
                 orphans: 3;
                 widows: 3;
@@ -244,6 +249,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="resume">
         <!-- Header -->
@@ -263,10 +269,10 @@
         <div class="section">
             <div class="section-title">Professional Summary</div>
             <p style="font-size: 10pt; color: #4b5563; line-height: 1.4; text-align: justify; margin-bottom: 0;">
-                Software Engineering Student at Polytechnique of Agadir with 2+ years of professional experience 
-                in developing scalable web applications. Proficient in modern full-stack technologies including 
-                React, Vue.js, Django, Laravel, and Symfony. Experienced in building robust backend APIs and 
-                interactive frontend interfaces. Strong problem-solving skills and passion for creating innovative 
+                Software Engineering Student at Polytechnique of Agadir with 2+ years of professional experience
+                in developing scalable web applications. Proficient in modern full-stack technologies including
+                React, Vue.js, Django, Laravel, and Symfony. Experienced in building robust backend APIs and
+                interactive frontend interfaces. Strong problem-solving skills and passion for creating innovative
                 digital solutions.
             </p>
         </div>
@@ -274,7 +280,7 @@
         <!-- Professional Experience -->
         <div class="section">
             <div class="section-title">Professional Experience</div>
-            
+
             <div class="experience-item">
                 <div class="job-header">
                     <div>
@@ -358,14 +364,16 @@
         <!-- Featured Projects -->
         <div class="section">
             <div class="section-title">Featured Projects</div>
-            
+
             <div class="project-item">
                 <div class="job-header">
                     <div>
-                        <div class="job-title">Sign Language to Speech Converter (AI Hackathon Winner) 🏆</div>
-                        <div style="font-size: 8pt; color: #4a4a4a; font-weight: 600; margin-top: 3px; font-style: italic;">5th Prize Winner - AI Hackathon, École Polytechnique d'Agadir</div>
+                        <div class="job-title">Sign Language to Speech Converter (AI Hackathon Winner)</div>
+                        <div
+                            style="font-size: 8pt; color: #4a4a4a; font-weight: 600; margin-top: 3px; font-style: italic;">
+                            5th Prize Winner - AI Hackathon, École Polytechnique d'Agadir</div>
                     </div>
-                
+
                 </div>
                 <div class="technologies">
                     <span class="tech-badge">Deep Learning</span>
@@ -377,12 +385,18 @@
                     <span class="tech-badge">Darija</span>
                 </div>
                 <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
-                    Innovative AI-powered solution developed during a 3-day intensive hackathon at École Polytechnique d'Agadir 
-                    on the theme "Artificial Intelligence at the Service of Performance" (L'intelligence Artificielle au Service de la Performance). 
-                    Led a team of 7 members to build a complete deep learning system that converts sign language gestures into audio and text 
-                    in Darija (Moroccan Arabic dialect) to assist people with hearing impairments. The solution includes both a responsive 
-                    web application and mobile app, utilizing computer vision for gesture recognition and NLP for dialect-specific text-to-speech. 
-                    Demonstrated practical application of AI for social impact and accessibility. Recognized with 5th prize among competing teams 
+                    Innovative AI-powered solution developed during a 3-day intensive hackathon at École Polytechnique
+                    d'Agadir
+                    on the theme "Artificial Intelligence at the Service of Performance" (L'intelligence Artificielle au
+                    Service de la Performance).
+                    Led a team of 7 members to build a complete deep learning system that converts sign language
+                    gestures into audio and text
+                    in Darija (Moroccan Arabic dialect) to assist people with hearing impairments. The solution includes
+                    both a responsive
+                    web application and mobile app, utilizing computer vision for gesture recognition and NLP for
+                    dialect-specific text-to-speech.
+                    Demonstrated practical application of AI for social impact and accessibility. Recognized with 5th
+                    prize among competing teams
                     by jury members from École Polytechnique d'Agadir, Akkodis, HACK&PITCH, and LaStartupStation.
                 </p>
             </div>
@@ -401,7 +415,7 @@
                     <span class="tech-badge">LMS</span>
                 </div>
                 <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
-                    Comprehensive full-stack LMS platform with user authentication, course management, 
+                    Comprehensive full-stack LMS platform with user authentication, course management,
                     student enrollment, progress tracking, assignment submissions, and real-time notifications.
                 </p>
             </div>
@@ -419,7 +433,7 @@
                     <span class="tech-badge">Full Stack</span>
                 </div>
                 <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
-                    Complete e-commerce platform with product catalog, shopping cart, user authentication, 
+                    Complete e-commerce platform with product catalog, shopping cart, user authentication,
                     order management, and admin panel for inventory management.
                 </p>
             </div>
@@ -438,7 +452,7 @@
                     <span class="tech-badge">Real-time</span>
                 </div>
                 <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
-                    Real-time chat application with instant messaging, user authentication, 
+                    Real-time chat application with instant messaging, user authentication,
                     real-time message synchronization, and group chat capabilities.
                 </p>
             </div>
@@ -510,13 +524,17 @@
                     </div>
                 </div>
                 <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
-                    Awarded 5th prize at the "Artificial Intelligence at the Service of Performance" hackathon organized by 
-                    École Polytechnique d'Agadir and Universiapolis, with partners Akkodis, HACK&PITCH, and LaStartupStation. 
-                    Developed an innovative deep learning solution that converts sign language gestures into audio and text 
-                    in Darija (Moroccan Arabic dialect) to assist people with hearing impairments. Led a team of 7 members 
-                    (Ahmed Amine Maarouf, Aya OULHINT, Meryem Gueri, Oussama Boubrine, Mohamed BOUFOUSSI, Nabil Ouaamer) 
-                    to build a complete web and mobile application using computer vision for gesture recognition and NLP 
-                    for dialect-specific text-to-speech conversion. Demonstrated leadership, technical expertise, and 
+                    Awarded 5th prize at the "Artificial Intelligence at the Service of Performance" hackathon organized
+                    by
+                    École Polytechnique d'Agadir and Universiapolis, with partners Akkodis, HACK&PITCH, and
+                    LaStartupStation.
+                    Developed an innovative deep learning solution that converts sign language gestures into audio and
+                    text
+                    in Darija (Moroccan Arabic dialect) to assist people with hearing impairments. Led a team of 7
+                    members
+                    (Ahmed Amine Maarouf, Aya OULHINT, Meryem Gueri, Oussama Boubrine, Mohamed BOUFOUSSI, Nabil Ouaamer)
+                    to build a complete web and mobile application using computer vision for gesture recognition and NLP
+                    for dialect-specific text-to-speech conversion. Demonstrated leadership, technical expertise, and
                     commitment to using AI for social impact and accessibility.
                 </p>
             </div>
@@ -534,5 +552,5 @@
         </div>
     </div>
 </body>
-</html>
 
+</html>
