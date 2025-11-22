@@ -14,7 +14,7 @@ export const experience = [
         tags: ["Django REST Framework", "Django", "Python", "REST API", "Backend Development"]
     },
     {
-        title: "Full-stack Developer",
+        title: "Assistant Engineer",
         company: "9rayti.Com",
         date: "Jul 2024 - Dec 2024 · 6 mos",
         location: "Agadir, Souss-Massa, Morocco · Hybrid",
