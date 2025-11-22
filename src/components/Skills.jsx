@@ -7,8 +7,9 @@ const Skills = () => {
     const categories = [
         { title: 'Frontend', key: 'frontend' },
         { title: 'Backend', key: 'backend' },
-        { title: 'Database & Tools', key: 'database' },
-        { title: 'Other', key: 'other' }
+        { title: 'Mobile Development', key: 'mobile' },
+        { title: 'AI & Machine Learning', key: 'ai_ml' },
+        { title: 'Tools & Others', key: 'tools' }
     ];
 
     return (
