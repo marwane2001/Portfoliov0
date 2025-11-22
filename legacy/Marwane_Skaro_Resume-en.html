@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwane Skaro - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #1a1a1a;
+            background: white;
+        }
+
+        .resume {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 12mm;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2d2d2d;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header .title {
+            font-size: 14pt;
+            color: #4a4a4a;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            font-size: 9pt;
+            color: #4b5563;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .section {
+            margin-bottom: 12px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #d1d5db;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            page-break-after: avoid;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+            page-break-inside: avoid;
+        }
+
+        .experience-item::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #4a4a4a;
+            font-weight: bold;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .company {
+            font-size: 11pt;
+            color: #4a4a4a;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .date-location {
+            font-size: 9pt;
+            color: #6b7280;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .technologies {
+            margin-top: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tech-badge {
+            background: transparent;
+            color: #4a4a4a;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 8pt;
+            font-weight: 400;
+            border: 1px solid #d1d5db;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 8px;
+        }
+
+        .skill-category-title {
+            font-size: 10pt;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .skill-list {
+            font-size: 9pt;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        .skill-list span {
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 3px;
+        }
+
+        .education {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+
+        .degree {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .school {
+            font-size: 10pt;
+            color: #4a4a4a;
+            margin-top: 2px;
+        }
+
+        .dates {
+            font-size: 9pt;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+
+        .languages {
+            font-size: 9pt;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        .languages p {
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .resume {
+                padding: 10mm;
+            }
+            
+            .section {
+                margin-bottom: 10px;
+            }
+            
+            .section-title {
+                margin-top: 4px;
+                margin-bottom: 6px;
+            }
+            
+            .experience-item, .project-item {
+                margin-bottom: 8px;
+            }
+            
+            .header {
+                margin-bottom: 12px;
+            }
+            
+            /* Allow orphan/widow control */
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            p {
+                orphans: 3;
+                widows: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <h1>MARWANE SKARO</h1>
+            <div class="title">Full Stack Developer</div>
+            <div class="contact">
+                <span>marwanebenhadj@gmail.com</span>
+                <span>linkedin.com/in/marwane-skaro-618971239</span>
+                <span>github.com/marwane2001</span>
+                <span>portfoliov0-krfbwvi59-marwane2001s-projects.vercel.app</span>
+                <span>Morocco</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p style="font-size: 10pt; color: #4b5563; line-height: 1.4; text-align: justify; margin-bottom: 0;">
+                Software Engineering Student at Polytechnique of Agadir with 2+ years of professional experience 
+                in developing scalable web applications. Proficient in modern full-stack technologies including 
+                React, Vue.js, Django, Laravel, and Symfony. Experienced in building robust backend APIs and 
+                interactive frontend interfaces. Strong problem-solving skills and passion for creating innovative 
+                digital solutions.
+            </p>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Full Stack Developer Consultant</div>
+                        <div class="company">Auditcloud Maroc</div>
+                    </div>
+                    <div class="date-location">
+                        Oct 2025 - Present · 2 mos<br>
+                        Rabat, Morocco · On-site
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">UML</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">Full Stack Development</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Software Engineer</div>
+                        <div class="company">Bytebuild</div>
+                    </div>
+                    <div class="date-location">
+                        Mar 2025 - Aug 2025 · 6 mos<br>
+                        Agadir, Souss-Massa, Morocco · Hybrid
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Django REST Framework</span>
+                    <span class="tech-badge">Django</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">REST API</span>
+                    <span class="tech-badge">Backend Development</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Full-stack Developer</div>
+                        <div class="company">9rayti.Com</div>
+                    </div>
+                    <div class="date-location">
+                        Jul 2024 - Dec 2024 · 6 mos<br>
+                        Agadir, Souss-Massa, Morocco · Hybrid
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Symfony Framework</span>
+                    <span class="tech-badge">Vue.js</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Full Stack Development</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Full-stack Developer</div>
+                        <div class="company">Bytebuild</div>
+                    </div>
+                    <div class="date-location">
+                        Jul 2023 - Sep 2023 · 3 mos<br>
+                        Agadir, Souss-Massa, Morocco · On-site
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Full Stack Development</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="section">
+            <div class="section-title">Featured Projects</div>
+            
+            <div class="project-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Sign Language to Speech Converter (AI Hackathon Winner) 🏆</div>
+                        <div style="font-size: 8pt; color: #4a4a4a; font-weight: 600; margin-top: 3px; font-style: italic;">5th Prize Winner - AI Hackathon, École Polytechnique d'Agadir</div>
+                    </div>
+                
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Deep Learning</span>
+                    <span class="tech-badge">AI/ML</span>
+                    <span class="tech-badge">Web App</span>
+                    <span class="tech-badge">Mobile App</span>
+                    <span class="tech-badge">Computer Vision</span>
+                    <span class="tech-badge">NLP</span>
+                    <span class="tech-badge">Darija</span>
+                </div>
+                <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
+                    Innovative AI-powered solution developed during a 3-day intensive hackathon at École Polytechnique d'Agadir 
+                    on the theme "Artificial Intelligence at the Service of Performance" (L'intelligence Artificielle au Service de la Performance). 
+                    Led a team of 7 members to build a complete deep learning system that converts sign language gestures into audio and text 
+                    in Darija (Moroccan Arabic dialect) to assist people with hearing impairments. The solution includes both a responsive 
+                    web application and mobile app, utilizing computer vision for gesture recognition and NLP for dialect-specific text-to-speech. 
+                    Demonstrated practical application of AI for social impact and accessibility. Recognized with 5th prize among competing teams 
+                    by jury members from École Polytechnique d'Agadir, Akkodis, HACK&PITCH, and LaStartupStation.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Learning Management System</div>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Django REST Framework</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Full Stack</span>
+                    <span class="tech-badge">LMS</span>
+                </div>
+                <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
+                    Comprehensive full-stack LMS platform with user authentication, course management, 
+                    student enrollment, progress tracking, assignment submissions, and real-time notifications.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Shopping Website</div>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">E-commerce</span>
+                    <span class="tech-badge">Full Stack</span>
+                </div>
+                <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
+                    Complete e-commerce platform with product catalog, shopping cart, user authentication, 
+                    order management, and admin panel for inventory management.
+                </p>
+            </div>
+
+            <div class="project-item" style="margin-top: 20px; page-break-before: auto;">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Chat App</div>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">Dart</span>
+                    <span class="tech-badge">Mobile</span>
+                    <span class="tech-badge">Real-time</span>
+                </div>
+                <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
+                    Real-time chat application with instant messaging, user authentication, 
+                    real-time message synchronization, and group chat capabilities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Frontend</div>
+                    <div class="skill-list">
+                        <span>React</span><span>Vue.js</span><span>JavaScript</span><span>TypeScript</span>
+                        <span>HTML/CSS</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Backend</div>
+                    <div class="skill-list">
+                        <span>Laravel</span><span>Django</span><span>Symfony</span><span>PHP</span>
+                        <span>Python</span><span>Java</span><span>Spring Boot</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Mobile</div>
+                    <div class="skill-list">
+                        <span>Flutter</span><span>Dart</span><span>Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">AI & Machine Learning</div>
+                    <div class="skill-list">
+                        <span>Deep Learning</span><span>Computer Vision</span><span>NLP</span>
+                        <span>Machine Learning</span><span>TensorFlow</span><span>Jupyter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Tools & Others</div>
+                    <div class="skill-list">
+                        <span>MySQL</span><span>Git</span><span>REST API</span><span>UML</span>
+                        <span>Firebase</span><span>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education">
+                <div class="degree">Software Engineering</div>
+                <div class="school">Polytechnique of Agadir</div>
+                <div class="dates">2020 - 2025</div>
+            </div>
+        </div>
+
+        <!-- Achievements & Certifications -->
+        <div class="section">
+            <div class="section-title">Achievements & Certifications</div>
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">5th Prize Winner - AI Hackathon</div>
+                        <div class="company">École Polytechnique d'Agadir & Universiapolis</div>
+                    </div>
+                    <div class="date-location">
+                        Dec 29-31, 2023<br>
+                        Agadir, Morocco
+                    </div>
+                </div>
+                <p style="font-size: 9pt; color: #4b5563; margin-top: 4px; line-height: 1.4;">
+                    Awarded 5th prize at the "Artificial Intelligence at the Service of Performance" hackathon organized by 
+                    École Polytechnique d'Agadir and Universiapolis, with partners Akkodis, HACK&PITCH, and LaStartupStation. 
+                    Developed an innovative deep learning solution that converts sign language gestures into audio and text 
+                    in Darija (Moroccan Arabic dialect) to assist people with hearing impairments. Led a team of 7 members 
+                    (Ahmed Amine Maarouf, Aya OULHINT, Meryem Gueri, Oussama Boubrine, Mohamed BOUFOUSSI, Nabil Ouaamer) 
+                    to build a complete web and mobile application using computer vision for gesture recognition and NLP 
+                    for dialect-specific text-to-speech conversion. Demonstrated leadership, technical expertise, and 
+                    commitment to using AI for social impact and accessibility.
+                </p>
+            </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <div class="section-title">Languages</div>
+            <div class="languages">
+                <p><strong>Arabic:</strong> Native proficiency</p>
+                <p><strong>Tamazight:</strong> Native proficiency</p>
+                <p><strong>French:</strong> Professional working proficiency</p>
+                <p><strong>English:</strong> Professional working proficiency</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
