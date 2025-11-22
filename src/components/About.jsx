@@ -12,15 +12,13 @@ const About = () => {
                     </div>
                     <div className="about-text">
                         <p>
-                            I'm a Software Engineering Student at Polytechnique of Agadir (2020-2025) with a passion for creating innovative
-                            web solutions. With expertise in both frontend and backend technologies,
-                            I enjoy building full-stack applications that solve real-world problems.
+                            Software Engineering Student at Polytechnique of Agadir and Full Stack Developer with 2+ years of professional experience
+                            in building scalable web applications. Proficient in modern frontend and backend technologies
+                            including React, Vue.js, Django, Laravel, and Symfony.
                         </p>
                         <p>
-                            My journey in software development has taken me through various internships
-                            where I've worked with cutting-edge technologies like Laravel, Django,
-                            Symfony, Vue.js, and many others. I'm always eager to learn new technologies
-                            and contribute to meaningful projects.
+                            Passionate about creating innovative solutions and continuously learning new technologies.
+                            Proven track record of delivering high-quality projects through internships and consulting roles.
                         </p>
                         <div className="about-stats">
                             <div className="stat-item">
