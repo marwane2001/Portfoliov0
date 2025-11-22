@@ -20,6 +20,7 @@ const Hero = () => {
                         <div className="hero-buttons">
                             <a href="#projects" className="btn btn-primary">View Projects</a>
                             <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+                            <a href="/resume.pdf" download="Marwane_Skaro_Resume.pdf" className="btn btn-secondary">Download Resume</a>
                         </div>
                         <div className="social-links">
                             <a href="https://github.com/marwane2001" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
