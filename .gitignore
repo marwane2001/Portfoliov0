@@ -29,3 +29,20 @@ Thumbs.db
 logs/
 *.log
 
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# Automation/resume generation files (if any remain)
+*.docx
+config.py
+requirements_automation.txt
+
